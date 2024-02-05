@@ -1,123 +1,234 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Abusive Bottles Home</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Noah, Sid, Kyle">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body {
-                background-color: black;
-                padding-top: 1vw;
+    <title>Abusive Bottles Home</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Noah, Sid, Kyle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            padding-top: 1vw;
 
-                display: flex;
-                justify-content: center;
-            }
-            #container {
-                width: 75%;
-                height: auto;
-                background-color: #39363b;
-            }
-            #header {
-                width: 100%;
-                height: auto;
-                background-color: #1e1d20;
+            display: flex;
+            justify-content: center;
+        }
+        #container {
+            width: 75%;
+            height: auto;
+            background-color: #39363b;
+        }
+        #header {
+            width: 100%;
+            height: auto;
+            background-color: #1e1d20;
 
-                display: flex;
-                justify-content: space-between;
-                
-            }
-            .name {
-                color: white;
-                margin: 1% 2% 1%;
-                font-family: Spectral, serif;
-                width: auto;
-                font-size: 3vw;
-                border-collapse: collapse;
-                white-space: nowrap;
-            }
-            .name_footer {
-                margin: 1% 2% 1%;
-                font-size: 2vw;
-                font-family: Spectral, serif;
-                width: auto;
-                border-collapse: collapse;
-                white-space: nowrap;
-            }
-            #nav {
-                width: 40%;
-                margin: 3% 5% auto;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .name {
+            color: white;
+            margin: 1% 2% 1%;
+            font-family: Spectral, serif;
+            width: auto;
+            font-size: 3vw;
+            border-collapse: collapse;
+            white-space: nowrap;
+        }
+        .name_footer {
+            margin: 1% 2% 1%;
+            font-size: 2vw;
+            font-family: Spectral, serif;
+            width: auto;
+            border-collapse: collapse;
+            white-space: nowrap;
+        }
+        #nav {
+            width: 40%;
+            margin: 3% 5% auto;
 
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-            }
-            .navitems {
-                color: white;
-                text-decoration: underline;
-                font-size: 1vw;
-                font-family: Rubik, sans-serif;
-                margin-top: 2.5%;
-            }
-            #hero {
-                width: 100%;
-                height: 20vw;
-                object-fit: contain;
-            }
-            #hero_image {
-                width: 100%;
-                height: 100%;
-                
-            }
-            #indexcontent {
-                width: 100%;
-                height: 700px;
-                background-color: #302e33;
-            }
-            #footer {
-                width: 100%;
-                height: auto;
-                background-color: #1e1d20;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .navitems {
+            color: white;
+            text-decoration: underline;
+            font-size: 1vw;
+            font-family: Rubik, sans-serif;
+            margin-top: 2.5%;
+        }
+        #hero {
+            width: 100%;
+            height: 20vw;
+        }
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+        #indexcontent {
+            width: 100%;
+            height: auto;
+            background-color: #302e33;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #footer {
+            width: 100%;
+            height: auto;
+            background-color: #1e1d20;
 
-                display: flex;
-                justify-content: flex-end;
-            }
-            .line {
-                background-color: white;
-                width: auto;
-                height: 0.25%;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="container">
-            <div id="header">
-                <div class="name">
-                        <h1 class="name">Abusive Bottles</h1>
-                </div>
-                <div id="nav">
-                    <a class="navitems" href="index.html">Home</a>
-                    <a class="navitems" href="products.html">Products</a>
-                    <a class="navitems" href="aboutus.html">About Us</a>
-                </div>
+            display: flex;
+            justify-content: flex-end;
+        }
+        .line {
+            background-color: white;
+            width: auto;
+            height: 0.25%;
+        }
+        #pagetitlebox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            font-family: Spectral, serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .leftcontent {
+            width: 96%;
+            height: 30%;
+            padding-left: 4%;
+            padding-bottom: 4%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            color: white;
+        }
+        .rightcontent {
+            width: 96%;
+            height: 30%;
+            padding-right: 4%;
+            padding-bottom: 4%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            object-fit: contain;
+            color: white;
+        }
+        .hold {
+            width: 40%;
+            padding-right: 2%;
+            font-family: Rubik, sans-serif;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+        .l {
+            color: white;
+            display: flex;
+            padding-left: 10%;
+            text-decoration: underline;
+            justify-content: flex-start;
+
+        }
+        .r {
+            color: white;
+            display: flex;
+            padding-right: 10%;
+            text-decoration: underline;
+            justify-content: flex-end;
+        }
+        .imagebox {
+            width: 33%;
+            height: 80%;
+            object-fit: contain;
+        }
+        .smallimage {
+            width: 70%;
+            height: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="name">
+                    <h1 class="name">Abusive Bottles</h1>
             </div>
-            <div class="line"></div>
-            <div id="hero">
-                <img id="hero_image" src="heroimage.jpg" width="auto" height=auto>
+            <div id="nav">
+                <a class="navitems" href="index.html">Home</a>
+                <a class="navitems" href="products.html">Products</a>
+                <a class="navitems" href="aboutus.html">About Us</a>
             </div>
-            <div class="line"></div>
-            <div id="indexcontent">
-
-            </div>
-            <div class="line"></div>
-            <div id="footer">
-                <div class="name">
-                    <h1 class="name_footer">Abusive Bottles</h1>
-                </div>
-            </div>
-
         </div>
-        <script>
-        </script>
-    </body>
+        <div class="line"></div>
+        <div id="hero">
+            <img class="image" src="heroimage.jpg">
+        </div>
+        <div class="line"></div>
+        <div id="indexcontent">
+            <div id="pagetitlebox">
+                <h1>Home</h1>
+            </div>
+            <div class="l">
+                <h2>Better than Pre Workout</h2>
+            </div>
+            <div class="leftcontent">
+                <div class="hold">
+                    <p>
+                        Who needs pre workout when you can have severe and constant 
+                        emotional trauma to power your workouts. Abusive bottles are 
+                        scientifically proven to boost your gains by up to 75% though 
+                        our innovative tough love messaging.
+                    </p>
+                </div>
+                <div class="imagebox">
+                    <img class="smallimage" src="b1.jpeg">
+                </div>
+            </div>
+            <div class="r">
+                <h2>Customer Testimonial</h2>
+            </div>
+            <div class="rightcontent">
+                <div class="imagebox">
+                    <img class="smallimage" src="b2.jpeg">
+                </div>
+                <div class="hold">
+                    <p>
+                        Before finding abusive bottles I was rarely pushing myself in the gym, 
+                        I'd lower my weights, leave early, and make no progress; but now that 
+                        I have a constant reminder how horrible and inadequate I am as a person 
+                        I'm pushing myself harder than ever!
+                    </p>
+                </div>
+            </div>
+            <div class="l">
+                <h2>Customer Testimonial</h2>
+            </div>
+            <div class="leftcontent">
+                <div class="hold">
+                    <p>
+                        My abusive bottle reminds me that my parents would have stayed together if 
+                        not my inherent weakness as a person. I cry a lot more now but my lifts 
+                        have all more than doubled since purchasing.
+                    </p>
+                </div>
+                <div class="imagebox">
+                    <img class="smallimage" src="b3.jpeg">
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="footer">
+            <div class="name">
+                <h1 class="name_footer">Abusive Bottles</h1>
+            </div>
+        </div>
+
+    </div>
+    <script>
+    </script>
+</body>
 </html>
