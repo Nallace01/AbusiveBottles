@@ -1,14 +1,122 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About Us</title>
+        <title>Abusive Bottles Home</title>
         <meta charset="UTF-8">
         <meta name="author" content="Noah, Sid, Kyle">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            body {
+                background-color: black;
+                padding-top: 1vw;
+
+                display: flex;
+                justify-content: center;
+            }
+            #container {
+                width: 75%;
+                height: auto;
+                background-color: #39363b;
+            }
+            #header {
+                width: 100%;
+                height: auto;
+                background-color: #1e1d20;
+
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .name {
+                color: white;
+                margin: 1% 2% 1%;
+                font-family: Spectral, serif;
+                width: auto;
+                font-size: 3vw;
+                border-collapse: collapse;
+                white-space: nowrap;
+            }
+            .name_footer {
+                margin: 1% 2% 1%;
+                font-size: 2vw;
+                font-family: Spectral, serif;
+                width: auto;
+                border-collapse: collapse;
+                white-space: nowrap;
+            }
+            #nav {
+                width: 40%;
+                margin: 3% 5% auto;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            .navitems {
+                color: white;
+                text-decoration: underline;
+                font-size: 1vw;
+                font-family: Rubik, sans-serif;
+                margin-top: 2.5%;
+            }
+            #hero {
+                width: 100%;
+                height: 20vw;
+                object-fit: contain;
+            }
+            #hero_image {
+                width: 100%;
+                height: 100%;
+                
+            }
+            #aboutuscontent {
+                width: 100%;
+                height: 700px;
+                background-color: #302e33;
+            }
+            #footer {
+                width: 100%;
+                height: auto;
+                background-color: #1e1d20;
+
+                display: flex;
+                justify-content: flex-end;
+            }
+            .line {
+                background-color: white;
+                width: auto;
+                height: 0.25%;
+            }
         </style>
     </head>
     <body>
+        <div id="container">
+            <div id="header">
+                <div class="name">
+                        <h1 class="name">Abusive Bottles</h1>
+                </div>
+                <div id="nav">
+                    <a class="navitems" href="index.html">Home</a>
+                    <a class="navitems" href="products.html">Products</a>
+                    <a class="navitems" href="aboutus.html">About Us</a>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div id="hero">
+                <img id="hero_image" src="heroimage.jpg" width="auto" height=auto>
+            </div>
+            <div class="line"></div>
+            <div id="aboutuscontent">
+
+            </div>
+            <div class="line"></div>
+            <div id="footer">
+                <div class="name">
+                    <h1 class="name_footer">Abusive Bottles</h1>
+                </div>
+            </div>
+
+        </div>
         <script>
         </script>
     </body>
